@@ -123,7 +123,7 @@ img{
         }
 }
 /* desktop */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1158px) {
         .container{
         min-width: 1128px;
         max-width: 1168px;
@@ -248,7 +248,7 @@ display: inline-block;
 }
 
   /* desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
         .header .logo {
                 margin-right: 76px;
         }
@@ -409,9 +409,9 @@ display: inline-block;
 
 /* desktop */
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1158px) {
         .header-container {
-                        min-width: 1200px;
+                        min-width: 1158px;
                         padding-right: 156px;
                         padding-left: 156px;
                 }
