@@ -113,14 +113,18 @@ img{
         align-items: center;
         padding: 0 24px 0 16px;
  } 
-
+.section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+}
 
 /* laptop */
-@media screen and (min-width:767px) {
+@media screen and (min-width:768px) {
         .container {
         min-width: 736px;
         max-width: 768px;
         }
+        
 }
 /* desktop */
 @media screen and (min-width:1158px) {
@@ -129,12 +133,13 @@ img{
         max-width: 1168px;
         padding: 0 15px;
 }
-}
-
 .section{
         padding-top: 120px;
         padding-bottom: 120px;
 }
+}
+
+
 section:nth-child(3){
         padding-top: 0px;
 }
@@ -210,15 +215,46 @@ background-color: var(--white-background);
         color: var(--dark);
         margin-bottom: 72px;
 }
+
+/* all */
 .hthird-text {
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
         letter-spacing: 0.02em;
         color: var(--dark);
         margin-bottom: 8px;
 }
+/* phone */
+@media screen and (max-width: 767px) {
+        .paragraph-txt{
+                font-weight: 500;
+        }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+        .paragraph-txt {
+                font-weight: 500;
+        }
+        
+}
+/* desktop */
+@media screen and (min-width: 1158px) {
+        .hthird-text {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.2;
+        }
+        .paragraph-txt {
+                font-weight: 400;
+        }
+}
+
+
+
+
+
 .card-content{
         padding-top: 32px;
         padding-bottom: 32px;
@@ -811,13 +847,14 @@ color: rgba(46, 47, 66, 0.4);
 /*  */
 /*  */
 /* MAIN INDEX */
-/* hero */
+                                                /*====== HERO ====== */
 .hero-section {
         background: var(--dark);
         height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
         background-size: cover;
+     /* доробити */
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -894,29 +931,82 @@ margin-left: auto;
         background-color: var(--pressed-state);
                
 }
-/* hero */
-/* 1 sec */
-
+                /* hero */
+                                                /* 1 sec */
+/* all */
 .first-sec-content{
         display: flex;
-                gap: 24px;
+        gap: 24px;
 }
-.first-sec-content-item{
-       width: 264px; 
+
+
+/* phone */
+@media screen and (max-width: 767px){
+        .first-sec-content{
+                flex-direction: column;
+                width: 396px;
+                gap: 72px;
+        }
+        .first-sec-content-item {
+                        width: 396px;
+                }
+        .icon-container{
+                display: none;
+        }
 }
+/* tablet */
+@media screen and (min-width: 768px){
+        .first-sec-content {
+                flex-direction: row;
+                width: 736px;
+                flex-wrap: wrap;
+                row-gap: 72px;
+                column-gap: 24px;
+        }
+        .first-sec-content-item {
+                
+                width: 356px;
+        }
+        .icon-container {
+                display: none;
+        }
+}
+/* desktop */
+@media screen and (min-width: 1158px){
+        .first-sec-content {
+                flex-direction: row;
+                width: 1128px;
+        }
+        .first-sec-content-item {
+                width: 264px;
+        }
+        .icon-container {
+                display: flex;  
+
+                 width: 264px;
+                 height: 112px;
+                 
+                 border-radius: 4px;
+                 justify-content: center;
+                 align-items: center;
+                 background-color: var(--light);
+                 margin-bottom: 8px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* 1 sec */
 /* 2 sec */
-.icon-container{
-        width: 264px;
-        height: 112px;
-        display: flex;
-        border-radius: 4px;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--light);
-        margin-bottom: 8px;
-}
+
 .second-sec-content{
         gap: 24px;
         
