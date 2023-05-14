@@ -1099,7 +1099,7 @@ margin-left: auto;
         .icon-container {
                 display: none;
         }
-        .first-sec-content-item>.hthird-text {
+        .first-sec-content-item > .hthird-text {
                 text-align: center;
         
                 line-height: 1.1;
@@ -1127,6 +1127,13 @@ margin-left: auto;
                  align-items: center;
                  background-color: var(--light);
                  margin-bottom: 8px;
+        }
+        .first-sec-content-item>.hthird-text {
+                text-align: left;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 1.2;
+                                
         }
 }
 
