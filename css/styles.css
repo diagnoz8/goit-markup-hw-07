@@ -11,7 +11,7 @@
         display: none;
                 }
         }
-
+        
 
 
         .menu .link:hover,
@@ -879,6 +879,7 @@ color: rgba(46, 47, 66, 0.4);
 }
 /* phone */
 @media screen and (max-width: 767px) {
+      
         .hero-text{
                 max-width: 320px;
                 font-size: 36px;
@@ -950,7 +951,8 @@ margin-left: auto;
                 gap: 72px;
         }
         .first-sec-content-item {
-                        width: 396px;
+                min-width: 320px;
+                max-width: 396px;
                 }
         .icon-container{
                 display: none;
