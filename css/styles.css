@@ -179,7 +179,7 @@ img{
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        padding: 0 24px 0 16px;
+        padding: 0 15px 0 15px;
  } 
 .section {
         padding-top: 96px;
@@ -189,7 +189,7 @@ img{
 /* laptop */
 @media screen and (min-width:768px) {
         .container {
-        min-width: 736px;
+        min-width: 552px;
         max-width: 768px;
         }
         
@@ -309,9 +309,11 @@ background-color: var(--white-background);
 /* tablet */
 @media screen and (min-width: 768px) {
         .paragraph-txt {
+                font-weight: 400;
+        }
+        .first-sec-content .paragraph-txt{
                 font-weight: 500;
         }
-        
 }
 /* desktop */
 @media screen and (min-width: 1158px) {
@@ -496,7 +498,6 @@ display: inline-block;
 /* tablet */
 @media screen and (min-width: 767px) {
         .header-content {
-                min-width: 512px;
                 padding: 0;
         }
 
@@ -690,8 +691,8 @@ display: inline-block;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-        padding-left: 108px;
-        }
+        width: 582px;       
+ }
         .ft-description{
                 margin: 0;
         }
@@ -1042,9 +1043,6 @@ color: rgba(46, 47, 66, 0.4);
 
 .hero-section {
         background: var(--dark);
-        height: 600px;
-        padding-top: 188px;
-        padding-bottom: 188px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1052,6 +1050,31 @@ color: rgba(46, 47, 66, 0.4);
         margin-left: auto;
         margin-right: auto;
 }
+/* phone */
+@media screen and (max-width: 767px) {
+        .hero-section {
+                        padding-top: 112px;
+                        padding-bottom: 112px;
+
+        }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+        .hero-section {
+                        padding-top: 112px;
+                        padding-bottom: 112px;
+
+        }
+}
+/* desktop */
+@media screen and (min-width: 1158px) {
+        .hero-section {
+                        padding-top: 188px;
+                        padding-bottom: 188px;
+
+                }
+}
+
  /* bg image */
  @media screen and (max-width: 480px){
         .hero-section {
@@ -1220,7 +1243,7 @@ margin-left: auto;
                 display: none;
         }
         .first-sec-content-item > .hthird-text {
-                text-align: center;
+                text-align: left;
         
                 line-height: 1.1;
                 font-weight: 700;
