@@ -197,7 +197,7 @@ img{
 /* desktop */
 @media screen and (min-width:1158px) {
         .container{
-       width: 1158px;
+       min-width: 1158px;
         padding: 0 15px;
 }
 .section{
@@ -670,14 +670,11 @@ display: inline-block;
                 width: 398px;
 
                 border: 1px solid #FFFFFF;
-                opacity: 0.3;
 
                 margin-right: 0px;
                 margin-bottom: 16px;
         }
-        .subscribe-input::placeholder{
-                opacity: 0.6;
-        }
+      
 
        
 
@@ -699,13 +696,7 @@ display: inline-block;
         .social-media{
                 margin: 0;
         }
-.subscribe-input {
-        opacity: 0.3;
-}
 
-.subscribe-input::placeholder {
-        opacity: 0.6;
-}
 }
 /* /tablet */
 
@@ -725,13 +716,7 @@ display: inline-block;
         .ft-description {
                 margin-right: 120px;
         }
-        .subscribe-input {
-                opacity: 1;
-        }
-
-        .subscribe-input::placeholder {
-                opacity: 1;
-        }
+        
 
 }
 /* /desktop */
