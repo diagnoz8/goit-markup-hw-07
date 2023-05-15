@@ -1051,21 +1051,48 @@ color: rgba(46, 47, 66, 0.4);
         margin-right: auto;
 }
  /* bg image */
-.hero-section {
+ @media screen and (max-width: 480px){
+        .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_mob.jpg);
 }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                .hero-section {
+                                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_mob@2x.jpg);
+                        }
+        }
+}
+
 /* tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 481px) and (max-width:767px){
         .hero-section {
                         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_tab.jpg);
                 }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                .hero-section {
+                                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_tab@2x.png);
+                        }
+        }
         
 }
 /* desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
         .hero-section {
                         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_desk.jpg);
                 }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                .hero-section {
+                                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office_desk@2x.jpg);
+                        }
+        }
 }
 
 
