@@ -197,8 +197,7 @@ img{
 /* desktop */
 @media screen and (min-width:1158px) {
         .container{
-        min-width: 1128px;
-        max-width: 1168px;
+       width: 1158px;
         padding: 0 15px;
 }
 .section{
@@ -401,7 +400,14 @@ display: inline-block;
                  }
 }
 /* desktop */
-
+@media screen and (min-width: 1158px) {
+        .contacts-menu {
+        
+                        display: block;
+                        margin-left: auto;
+        
+                }
+}
 
 
 /* mobile */
@@ -513,15 +519,15 @@ display: inline-block;
 
 /* desktop */
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
         .header-container {
-                        min-width: 1158px;
+                min-width: 1158px;
         
-                }
-                .header{
-                        padding-right: 126px;
-                padding-left: 126px;
-                }
+        }
+        .header{
+                        /* padding-right: 126px;
+                padding-left: 126px; */
+        }
         .header-content {
                 min-width: 450px;
                 }
@@ -532,9 +538,9 @@ display: inline-block;
         }
          .menu-contacts {
                 flex-direction: row;
-                gap: 12px;
+                gap: 40px;
         }
-        .ccontacts-menu{
+        .contacts-menu{
                 margin-left: auto;
         }
 
@@ -1202,7 +1208,6 @@ margin-left: auto;
 @media screen and (min-width: 768px){
         .first-sec-content {
                 flex-direction: row;
-                width: 736px;
                 flex-wrap: wrap;
                 row-gap: 72px;
                 column-gap: 24px;
@@ -1226,7 +1231,6 @@ margin-left: auto;
 @media screen and (min-width: 1158px){
         .first-sec-content {
                 flex-direction: row;
-                width: 1128px;
         }
         .first-sec-content-item {
                 width: 264px;
