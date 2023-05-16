@@ -68,6 +68,7 @@
                 height: 100%;
                 padding-top: 80px;
                 padding-left: 40px;
+                padding-right: 35px;
 
                 background-color: var(--white-background);
                 z-index: 999;
@@ -87,15 +88,17 @@
                 color: var(--dark);
         }
         .pseudo-ft{
+                position: absolute;
+                bottom: 0;
                 margin-top: auto;
-                margin-bottom: 40px;
+                min-width: 280px;
+                max-width: ;
         }
 
         .mobile-menu {
                 display: flex;
                 flex-direction: column;
                 
-                margin-bottom: 284px;
                 padding: 0;
                 list-style: none;
                 gap: 40px;
@@ -114,6 +117,8 @@
         .contacts-mobile{
                 gap: 40px;
                 margin-bottom: 48px;
+                flex-direction: column;
+                min-width: calc(100% - 75px);
         }
         .mobile-menu-tel{
                 font-weight: 700;
@@ -125,18 +130,17 @@
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 1.2;
+                color: var(--text);
 
         }
-        .contacts-mobile{
-                flex-direction: column;
-        }
-                
+          
         
                 
         
                 .soc-icons-list-mob {
                         display: flex;
                         flex-direction: row;
+                        flex-wrap: wrap;
                         gap: 56px;
                 }
         
@@ -307,6 +311,7 @@ background-color: var(--white-background);
 @media screen and (max-width: 767px) {
         .paragraph-txt{
                 font-weight: 500;
+                width: calc(100% - 30px);
         }
 }
 /* tablet */
@@ -400,7 +405,7 @@ display: inline-block;
                         display: flex;
                         flex-direction: column;
                         margin-left: auto;
-                        padding: 16px 0px;
+                        padding: 0px 0px;
         
                  }
 }
@@ -621,7 +626,6 @@ display: inline-block;
         border: 1px solid var(--white-background);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        width: 264px;
         height: 40px;
 }
 
@@ -662,16 +666,17 @@ display: inline-block;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
         }
         .subscribe-form {
-             
+                width: 100%;
                 flex-direction: column;
                 align-items: center;
 
         }
         .subscribe-input{
-                width: 398px;
-
+                max-width: 398px;
+                width: 100%;
                 border: 1px solid #FFFFFF;
 
                 margin-right: 0px;
@@ -698,6 +703,9 @@ display: inline-block;
         }
         .social-media{
                 margin: 0;
+        }
+        .subscribe-input{
+                        width: 264px;
         }
 
 }
@@ -1192,18 +1200,19 @@ margin-left: auto;
 @media screen and (max-width: 767px){
         .first-sec-content{
                 flex-direction: column;
-                min-width: 320px;
+                min-width: calc(100% - 30px);
                 max-width: 396px;
                 gap: 72px;
         }
         .first-sec-content-item {
-                min-width: 320px;
                 max-width: 396px;
+                align-self: center;
                 }
         .icon-container{
                 display: none;
         }
         .first-sec-content-item >.hthird-text{
+                display: inline-block;
                 text-align: center;
 
                 line-height: 1.1;
@@ -1305,8 +1314,11 @@ margin-left: auto;
                 display: flex;
                 flex-direction: column;
         }
+        .li-card-index{
+         align-self: center;
+        }
 .our-team-container {
-        padding: 0 82px;
+        padding: 0 15px;
 }
 }
 /* /phone */
@@ -1319,6 +1331,7 @@ margin-left: auto;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: center;
 }
 .our-team-container{
         padding: 0 108px;
@@ -1330,7 +1343,7 @@ margin-left: auto;
 /* desktop */
 @media screen and (min-width: 1158px){
         .our-team-container {
-                        padding: 0 0;
+                        padding: 0 15px;
                 }
 .third-sec-content {
                 gap: 24px;
