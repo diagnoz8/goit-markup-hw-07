@@ -311,7 +311,6 @@ background-color: var(--white-background);
 @media screen and (max-width: 767px) {
         .paragraph-txt{
                 font-weight: 500;
-                width: calc(100% - 30px);
         }
 }
 /* tablet */
