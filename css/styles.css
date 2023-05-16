@@ -90,7 +90,7 @@
         }
         .pseudo-ft{
                 position: absolute;
-                bottom: 0;
+                bottom: 40px;
                 margin-top: auto;
                 width: calc(100% - 75px);
         }
