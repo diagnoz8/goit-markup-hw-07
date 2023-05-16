@@ -11,7 +11,9 @@
         display: none;
                 }
         }
-        
+        .js-open-menu{
+                fill: var(--dark);
+        }
 
 
         .menu .link:hover,
