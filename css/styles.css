@@ -120,6 +120,9 @@
                 flex-direction: column;
                 min-width: calc(100% - 75px);
         }
+        .contacts-mob-item{
+                min-width: calc(100% - 75px);
+        }
         .mobile-menu-tel{
                 font-weight: 700;
                 font-size: 36px;
