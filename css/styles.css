@@ -776,7 +776,7 @@ display: inline-block;
         top: calc(50% );
         left: calc(50% );
         transform: translate(-50%, -50%);
-        width: 408px;
+        max-width: 408px;
         min-height: 584px;
         padding-left: 24px;
         padding-right: 24px;
